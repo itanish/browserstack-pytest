@@ -1,0 +1,10 @@
+
+{ 
+    "capabilities":
+    {
+        "browserName": "Firefox",
+        "os": "Windows",
+        "os_version":"10",
+        "build": "Pytest Sample"
+    }
+}
