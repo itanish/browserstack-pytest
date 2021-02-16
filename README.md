@@ -11,7 +11,7 @@ PyTest Integration with BrowserStack.
 * Update `.browserstack` files with your [BrowserStack Username and Access Key](https://www.browserstack.com/accounts/settings)
 
 ## Running your single tests
-* To run parallel tests, run `pytest --driver BrowserStack --variables config/capabilities1.json`
+* To run single tests, run `pytest --driver BrowserStack --variables config/capabilities1.json`
 
 
 ## Running your parallel tests
