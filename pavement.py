@@ -4,20 +4,20 @@ import threading, os, platform
 import json
 
 setup(
-    name = "behave-browserstack",
+    name = "browserstack-pytest",
     version = "0.1.0",
-    author = "BrowserStack",
-    author_email = "support@browserstack.com",
-    description = ("Behave Integration with BrowserStack"),
+    author = "Tanish Sehgal",
+    author_email = "tanish@browserstack.com",
+    description = ("Pytest Integration with BrowserStack"),
     license = "MIT",
     keywords = "example selenium browserstack",
-    url = "https://github.com/browserstack/lettuce-browserstack",
+    url = "https://github.com/itanish/browserstack-pytest",
     packages=['features']
 )
 
 def run_behave_test(config, feature, task_id=0):
 
-    sh('pytest --driver BrowserStack --variables capabilities{}.json'.format(task_id))
+    sh('pytest --driver BrowserStack --variables config/capabilities{}.json'.format(task_id))
 
 
 
@@ -26,7 +26,7 @@ def run_behave_test_parallel(config, feature, task_id=0):
 
     ###pytest --driver BrowserStack --capability browserName Firefox --capability os Windows --capability os_version 10 --capability build 'Pytest Sample'
 
-    with open('capabilities_parallel.json') as json_file:
+    with open('config/capabilities_parallel.json') as json_file:
         data = json.load(json_file)
 
     cap = data["capabilities" + str(task_id)]

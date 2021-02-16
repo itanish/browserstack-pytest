@@ -1,4 +1,4 @@
-from browserstack.local import Local
+# from browserstack.local import Local
 import pytest
 
 
@@ -29,6 +29,7 @@ def test_example(selenium):
 
 #     # Stop the Local instance
 #     bs_local.stop()
+
 
 # def test_local(selenium):
 #     selenium.get('http://localhost:5500/')
