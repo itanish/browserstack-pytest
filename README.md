@@ -19,3 +19,6 @@ PyTest Integration with BrowserStack.
 
  Understand how many parallel sessions you need by using our [Parallel Test Calculator](https://www.browserstack.com/automate/parallel-calculator?ref=github)
 
+## Notes
+* You can view your test results on the [BrowserStack Automate dashboard](https://www.browserstack.com/automate)
+* To test on a different set of browsers, check out our [platform configurator](https://www.browserstack.com/automate/python#setting-os-and-browser)
